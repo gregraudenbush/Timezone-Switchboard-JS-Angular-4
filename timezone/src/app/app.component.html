@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center; background-color: aquamarine; font-family: Courier new, courier, monospace">
+  <h1>
+    US Timezone Display
+  </h1>
+  <button (click)='pst()' [ngStyle]="{'background-color': buttoncolor1}" >PST</button>
+  <button (click)='mst()' [ngStyle]="{'background-color': buttoncolor2}">MST</button>
+  <button (click)='cst()' [ngStyle]="{'background-color': buttoncolor3}">CST</button>
+  <button (click)='est()' [ngStyle]="{'background-color': buttoncolor4}">EST</button>
+  <button (click)='clear()' [ngStyle]="{'background-color': 'white'}">Clear</button>
+  <br>
+   <!-- <h1 style="color:blueviolet;">{{ date   }}</h1>  -->
+   <h1 style="color:blueviolet;">{{ date | date: 'medium'}}</h1> 
+   <!-- {{ calcTime() }} -->
+</div>
+
+
+<div style="text-align:center; background-color: slateblue; font-family: Courier new, Courier, monospace; color: pink">
+  <h1>
+    Switchboard
+  </h1>
+  <button (click)='switch(0)' [ngStyle]="{'background-color': button[0].color }" > {{ button[0].word }}</button>
+  <button (click)='switch(1)' [ngStyle]="{'background-color': button[1].color }" > {{ button[1].word  }}</button>
+  <button (click)='switch(2)' [ngStyle]="{'background-color': button[2].color }" > {{ button[2].word  }}</button>
+  <button (click)='switch(3)' [ngStyle]="{'background-color': button[3].color }" > {{ button[3].word  }}</button>
+  <button (click)='switch(4)' [ngStyle]="{'background-color': button[4].color }" > {{ button[4].word  }}</button>
+  <button (click)='switch(5)' [ngStyle]="{'background-color': button[5].color }" > {{ button[5].word  }}</button>
+  <button (click)='switch(6)' [ngStyle]="{'background-color': button[6].color }" > {{ button[6].word  }}</button>
+  <button (click)='switch(7)' [ngStyle]="{'background-color': button[7].color }" > {{ button[7].word  }}</button>
+  <button (click)='switch(8)' [ngStyle]="{'background-color': button[8].color }" > {{ button[8].word  }}</button>
+  <button (click)='switch(9)' [ngStyle]="{'background-color': button[9].color }" > {{ button[9].word  }}</button>
+  <br>
+  <br>
+
+</div>
+
